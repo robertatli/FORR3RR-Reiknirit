@@ -69,7 +69,7 @@ endurkvæma fallið runa(m) sem skrifar m fyrstu stök rununnar á skjáinn. Dæ
 mundi skrifa 1 3 6 10 15 á skjá.
 
       ```c#
-static void Main(string[] args)
+       static void Main(string[] args)
         {
 
             Console.Write("Skrifaðu inn tölu:");
