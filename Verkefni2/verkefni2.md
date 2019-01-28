@@ -113,6 +113,6 @@ baka þversummu n. Dæmi: þversumma tölunnar 12 er 3 eða 1+2=3. Þversumma t�
 6. (2% ) Skrifaðu endurkvæma fallið samnefnari(n,m) sem tekur tvær heiltölufæribreytur n og
 m. Fallið á siðan að finna hæstu tölu sem gengur bæði upp í n og m. Dæmi,
 samnefnari(8,12) mundi skila 4 þar sem það er hæsta tala sem gengur bæði upp í 8 og
-12. samnefnari(3,13) mundi skila 1 þar sem 1 er hæsta tala sem gengur bæði upp í 3 og
-13. samnefnari(12,60) mundi skila 12 þar sem 12 er hæsta tala sem gengur bæði upp í 12
+#12. samnefnari(3,13) mundi skila 1 þar sem 1 er hæsta tala sem gengur bæði upp í 3 og
+#13. samnefnari(12,60) mundi skila 12 þar sem 12 er hæsta tala sem gengur bæði upp í 12
 og 60. Fallið skal vera endurkvæmt. 
