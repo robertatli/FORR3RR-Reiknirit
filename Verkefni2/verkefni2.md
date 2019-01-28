@@ -69,7 +69,37 @@ endurkvæma fallið runa(m) sem skrifar m fyrstu stök rununnar á skjáinn. Dæ
 mundi skrifa 1 3 6 10 15 á skjá.
 
       ```c#
+static void Main(string[] args)
+        {
 
+            Console.Write("Skrifaðu inn tölu:");
+            int m = Convert.ToInt32(Console.ReadLine());
+            int run = m;
+            m = 1;
+            for (int i = 0; i < run; i++)
+            {
+                
+                Console.Write(Runa(m) + " ");
+                if (m != run)
+                {
+                    m = m + 1;
+                }
+                
+            }
+            Console.ReadKey();
+            return;
+        }
+        public static int Runa(int m)
+        {
+            if (m != 0)
+            {
+                return m + Runa(m - 1);
+            }
+            else
+            {
+                return 0;
+            }
+        }
       ```
 
 5. (2%) Skrifaðu endurkvæma fallið þversumma(n) sem tekur færibreytuna n. Fallið skilar til
