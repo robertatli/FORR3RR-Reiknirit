@@ -18,7 +18,9 @@
 
 3. 
    a) reykniritið keyrir n sinnum, Bubblesort
+   
    b) reykniritið keyrir n^2 sinnum (lykkja sem er innan í lykkju), Selection Sort
+   
    c) reykniritið keyrir raðar eftir fyrsta staf, Quicksort
    
    
@@ -39,5 +41,7 @@
       print(y)
 ```
    a) 26!/(26-n)!*n!
+   
    b) O(2^n)
+   
 
