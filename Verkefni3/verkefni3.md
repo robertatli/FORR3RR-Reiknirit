@@ -16,11 +16,13 @@
 
 
 3. a) reykniritið keyrir n sinnum, Bubblesort
-   b) reykniritið keyrir n^2 sinnum, Selection Sor
-   c) reykniritið keyrir log(n) sinnum, Quicksort
+   b) reykniritið keyrir n^2 sinnum (lykkja sem er innan í lykkju), Selection Sort
+   c) reykniritið keyrir raðar eftir fyrsta staf, Quicksort
    
    
-4. Þetta gerir það sama nema bara með tölur.
+4. 
 ```python
-
+    26!
+__________
+(26-n)!*n!
 ```
