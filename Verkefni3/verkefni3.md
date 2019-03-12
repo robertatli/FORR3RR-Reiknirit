@@ -83,12 +83,8 @@
       quicksort(listinn,0,len(listinn)-1)
       print(listinn)
  ```
-  #### a)
+  #### a) nei
  
   #### b) O(n2)
- 
- ```python
-       
- ```
- 
+
 
