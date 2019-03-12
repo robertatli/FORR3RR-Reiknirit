@@ -129,7 +129,7 @@
 
 
    t=tree()
-   '''
+   
    print(t.insert(6))
    print(t.insert(2))
    print(t.insert(3))
