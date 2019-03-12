@@ -96,6 +96,7 @@ from math import *
   dbl = DLL()
 
   print("--- append ---")
+  
   print(dbl.append(5))           # 5
   print(dbl.append(7))
   print("--- push ---")# 5 7
@@ -104,11 +105,15 @@ from math import *
   print("--- append aftur ---")
   print(dbl.append(10))        # 0 1 5 7 10
   print("--- printlist ---")
+  
   dbl.printList()
+  
   print("--- delete ---")
   print(dbl.delete(5))   # 0 1 5 7
   print("--- printlist aftur ---")
+  
   dbl.printList()
+  
   print("--- find ---")
   print(dbl.find(5))      # True
   print(dbl.find(10))     # False
