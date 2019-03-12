@@ -57,47 +57,38 @@
   
  ### 5.
  ```python
-      from itertools import combinations as comb
-      from string import ascii_lowercase as low
-      from time import perf_counter
+      sys.setrecursionlimit(15000)
+      listinn.reverse()
+      print(listinn)
+      tolulisti = ["ad","ab","aa","ag","as","ac"]
 
+      if "abc" > "acb":
+          print("abc")
+          
+      def partiton(l,low,high):
+          t = low-1
+          for x in range(low,high):
+              if l[x] <= l[high]:
+                  t+=1
+                  l[x], l[t] = l[t], l[x]
+          l[t+1], l[high] = l[high], l[t+1]
+          return t+1
 
-      def average(l):
-          return sum(l)/len(l)
+      def quicksort(l,low,high):
+          if low<high:
+              ind = partiton(l,low,high)
+              quicksort(l,low,ind-1)
+              quicksort(l,ind+1,high)
+
+      quicksort(listinn,0,len(listinn)-1)
+      print(listinn)
  ```
- #### a)
+  #### a)
+ 
+  #### b) O(n2)
  
  ```python
-      def find_pivot(l):
-      pos = [0, len(l)//2, -1]
-      pivot_list = [l[pos[0]], l[pos[1]], l[pos[2]]]
-      l_len = len(l[0])
-      return pos[pivot_list.index(min(pivot_list[0][:l_len], pivot_list[1][:l_len], pivot_list[2][:l_len]))]
- ```
- 
-  #### b)
- 
- ```python
-       def qsort(l):
-          if len(l) <= 1:
-              return l
-          pi = find_pivot(l)
-          l[-1], l[pi] = l[pi], l[-1]
-          p = l[-1]
-          i = -1
-          for j, elem in enumerate(l[:-1]):
-              if elem == p or min(elem, p) == elem:
-                  i += 1
-                  l[i], l[j] = l[j], l[i]
-          l[i+1], l[-1] = l[-1], l[i+1]
-          return qsort(l[:i+1]) + [l[i+1]] + qsort(l[i+2:])
-
-
-      l = list(map("".join, list(comb(low, 5))))[::-1]
-      start = perf_counter()
-      l = qsort(l)
-      print(perf_counter() - start)
-      print(l)
+       
  ```
  
 
