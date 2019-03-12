@@ -22,7 +22,8 @@
    c) reykniritið keyrir raðar eftir fyrsta staf, Quicksort
    
    
-4. ```python
+4. 
+```python
       t=string.ascii_lowercase
       y =[]
       def q(n,s="",r = 0):
