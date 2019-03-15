@@ -10,7 +10,7 @@ from math import *
           self.prv = None
           self.nxt = None
 
-#---------------------------------------
+#---------------------------------------bætir aftan a listann
       def append(self,d):
           if self.nxt:
               return self.nxt.append(d)
@@ -19,12 +19,12 @@ from math import *
               self.nxt = curr
               curr.prv = self
               return True
-#---------------------------------------
+#---------------------------------------prentar listann
       def printList(self):
           print(self.data)
           if self.nxt:
               return self.nxt.printList()
-#---------------------------------------
+#---------------------------------------prentar fra head til enda
       def find(self, d):
           if self.data==d:
               return True
@@ -32,7 +32,7 @@ from math import *
               return self.nxt.find(d)
           else:
               return False
-#---------------------------------------
+#---------------------------------------eyðir ákveðnu ur lista
       def delete(self, d):
           if self.data==d:
               self.prv.nxt=self.nxt
@@ -50,33 +50,33 @@ from math import *
   class DLL: # DLL = Double Linked List
       def __init__(self):
           self.head = None
-#---------------------------------------
+#--------------------------------------- bætir við frems í listann
       def push(self,d):
           a=Node(d)
           a.nxt=self.head
           self.head.prv=a
           self.head=a
           return True
-#---------------------------------------
+#---------------------------------------bætir aftast í listann
       def append(self, d):
           if self.head:
               return self.head.append(d)
           else:
               self.head = Node(d)
               return True
-#---------------------------------------
+#---------------------------------------prentar allann listann
       def printList(self):
           if self.head:
               self.head.printList()
           else:
               print("Empty list!")
-#---------------------------------------
+#---------------------------------------finnur ákveðið fall
       def find(self, d):
           if self.head:
               return self.head.find(d)
           else:
               return False
-#---------------------------------------
+#---------------------------------------eyðir ákveðið fall
 
       def delete(self, d):
           try:
@@ -95,57 +95,57 @@ from math import *
 
   dbl = DLL()
 
-  print("--- append ---")
+  print("___appendum___")
   
-  print(dbl.append(5))           # 5
-  print(dbl.append(7))
-  print("--- push ---")# 5 7
-  print(dbl.push(1))             # 1 5 7
-  print(dbl.push(0))          # 0 1 5 7
-  print("--- append aftur ---")
-  print(dbl.append(10))        # 0 1 5 7 10
-  print("--- printlist ---")
-  
-  dbl.printList()
-  
-  print("--- delete ---")
-  print(dbl.delete(5))   # 0 1 5 7
-  print("--- printlist aftur ---")
+  print(dbl.append(3))           # 3
+  print(dbl.append(8))
+  print("___pushum___")# 3 8
+  print(dbl.push(2))             # 2 3 8
+  print(dbl.push(0))          # 0 2 3 8
+  print("___appendum aftur___")
+  print(dbl.append(11))        # 0 2 3 8 11
+  print("___prentum listann___")
   
   dbl.printList()
   
-  print("--- find ---")
-  print(dbl.find(5))      # True
-  print(dbl.find(10))     # False
+  print("___deleteum___")
+  print(dbl.delete(5))   # 0 2 3 8
+  print("___prentum listann aftur___")
+  
+  dbl.printList()
+  
+  print("___Leytum í listanum___")
+  print(dbl.find(3))      # True
+  print(dbl.find(11))     # False
 ```
 
 ### 2.
 ```python
   class Vigur:
-  #-------------------------------------
+  #-------------------------------------Frumstyllir x og y hnit
       def __init__(self,x,y):
           self.x=x
           self.y=y
-  #-------------------------------------
+  #-------------------------------------Skrifar hnit vigurs
       def prenta(self):
           print("("+str(self.x)+","+str(self.y)+")")
 
-  #-------------------------------------
+  #-------------------------------------skilar lengd
       def lengd(self):
           c=(self.x**2)+(self.y**2)
           c=sqrt(c)
           return c
 
-  #-------------------------------------
+  #-------------------------------------skilar hallatölu
       def halli(self):
           h=self.y/self.x
           return h
 
-  #-------------------------------------
+  #-------------------------------------skilar þvervigri
       def þvervigur(self):
           return Vigur(-self.y,self.x)
 
-  #-------------------------------------
+  #-------------------------------------skilar stefnuhorni
       def stefnuhorn(self):
           x=self.x
           y=self.y
@@ -156,7 +156,7 @@ from math import *
           else:
               return degrees(atan(y/x))
 
-  #-------------------------------------
+  #-------------------------------------skilar horni milli vigra
       def horn(self,v):
           a=self.x*v.x
           b=self.y*v.y
@@ -166,26 +166,26 @@ from math import *
           q=degrees(acos((a+b)/(a1*b1)))
           return q
 
-  #-------------------------------------
+  #-------------------------------------skilar summu vigri
       def summa(self,v):
           return Vigur(self.x+v.x,self.y+v.y)
 
 
-  print("--- Vigrar ---")
+  print("___Vigrar___")
   
-  v1 = Vigur(4,4)
+  v1 = Vigur(5,5)
   v1.prenta()
   
-  print("Lengd: ", v1.lengd())
-  print("Halli: ", v1.halli())
+  print("Lengd vigurs: ", v1.lengd())
+  print("Halli vigurs: ", v1.halli())
   
   vþ = v1.þvervigur()
   
-  print("Þvervigur: " , end=" ")
+  print("Þvervigur vigurs: " , end=" ")
   
   vþ.prenta()
   
-  print("Stefnuhorn: ", v1.stefnuhorn())
+  print("Stefnuhorn vigurs: ", v1.stefnuhorn())
   
   v2 = Vigur(1,-1)
   
@@ -193,7 +193,7 @@ from math import *
   
   v3 = v1.summa(v2)
   
-  print("Summa: " , end=" ")
+  print("Summa vigurs: " , end=" ")
   
   v3.prenta()
   
