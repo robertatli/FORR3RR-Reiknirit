@@ -1,6 +1,6 @@
 ### 1. 
 
-#### a) Reykniritið raðar tölunum í listanum L frá minnstu tölunni til hæstu
+#### a) Reykniritið raðar tölunum í listanum L frá minnstu tölunni til hæstu.
 
 #### b) Counting Sort
 
