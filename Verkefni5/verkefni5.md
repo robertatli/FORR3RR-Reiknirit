@@ -47,7 +47,7 @@ from math import *
 
 
 
-  class DLL: # DLL = Dobule Linked List
+  class DLL: # DLL = Double Linked List
       def __init__(self):
           self.head = None
 #---------------------------------------
