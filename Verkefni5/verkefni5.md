@@ -97,26 +97,26 @@ from math import *
 
   print("___appendum___")
   
-  print(dbl.append(3))           # 3
+  print(dbl.append(3))            # 3
   print(dbl.append(8))
-  print("___pushum___")# 3 8
-  print(dbl.push(2))             # 2 3 8
-  print(dbl.push(0))          # 0 2 3 8
+  print("___pushum___")           # 3 8
+  print(dbl.push(2))              # 2 3 8
+  print(dbl.push(0))              # 0 2 3 8
   print("___appendum aftur___")
-  print(dbl.append(11))        # 0 2 3 8 11
+  print(dbl.append(11))           # 0 2 3 8 11
   print("___prentum listann___")
   
   dbl.printList()
   
   print("___deleteum___")
-  print(dbl.delete(5))   # 0 2 3 8
+  print(dbl.delete(5))            # 0 2 3 8
   print("___prentum listann aftur___")
   
   dbl.printList()
   
   print("___Leytum í listanum___")
-  print(dbl.find(3))      # True
-  print(dbl.find(11))     # False
+  print(dbl.find(3))              # True
+  print(dbl.find(11))             # False
 ```
 
 ### 2.
