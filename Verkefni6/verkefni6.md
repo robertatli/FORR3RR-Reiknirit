@@ -1,4 +1,4 @@
-### 3.Project Euler Verkefni 67
+### 3. Project Euler Verkefni 67
 ```c#
   using System;
   using System.Collections.Generic;
