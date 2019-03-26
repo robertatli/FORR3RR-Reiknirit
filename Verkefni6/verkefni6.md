@@ -12,12 +12,12 @@
   {
       class Program
       {
-          static void Main(string[] args)
+          static void Main(string[] args) // keyrir
           {
-              new Program().Dynamic(); 
+              new Program().Dynamic();
           }
 
-          private int[,] readInput(string filename)
+          private int[,] readInput(string filename) // til að lesa text fileið
           {
               string line;
               string[] linePieces;
@@ -43,7 +43,7 @@
               return inputTriangle;
           }
 
-          public void Dynamic()
+          public void Dynamic() // parturinn sem gerir allt
           {
               Stopwatch clock = Stopwatch.StartNew();
 
