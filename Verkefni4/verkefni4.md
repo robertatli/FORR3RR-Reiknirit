@@ -54,7 +54,6 @@
 ### 5.
 ```python
    listinn=[2,3,4,5,6,7,8,9,10]
-   #listinn=[]
    def rada(lis,t,l,h):
        if len(lis)==0 or lis[-1]<t:
            lis.append(t)
