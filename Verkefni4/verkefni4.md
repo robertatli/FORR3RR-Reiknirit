@@ -20,7 +20,7 @@
                tel+=1
                if x==t:
                    return "Talan",t,"er í sæti",tel
-           return "Talan",t,"er ekki í listanum" #get bara sett -1 en hitt lítur betur út
+           return "Talan",t,"er ekki í listanum"
 
    t=int(input("Sláðu inn tölu til að finna: "))
    print(linear(listi,t))
@@ -40,7 +40,7 @@
            else:
                return b(t,lis,0,m-1)
        else:
-           return "Talan",t,"er ekki í listanum" #get bara sett -1 en hitt lítur betur út
+           return "Talan",t,"er ekki í listanum"
 
    t=int(input("Sláðu inn tölu til að finna: "))
    print(b(t, listi, 0, len(listi)))
