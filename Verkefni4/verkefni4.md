@@ -81,32 +81,32 @@
            self.left=None
            self.right=None
 
-       def insert(self,d):
-           if self.value==d:
+       def insert(self,a):
+           if self.value==a:
                return False
-           elif self.value>d:
+           elif self.value>a:
                if self.left:
-                   return self.left.insert(d)
+                   return self.left.insert(a)
                else:
-                   self.left=node(d)
+                   self.left=node(a)
                    return True
            else:
                if self.right:
-                   return self.right.insert(d)
+                   return self.right.insert(a)
                else:
-                   self.right=node(d)
+                   self.right=node(a)
                    return True
-       def find(self,d):
-           if self.value==d:
+       def find(self,a):
+           if self.value==a:
                return True
-           elif self.value>d:
+           elif self.value>a:
                if self.left:
-                   return self.left.find(d)
+                   return self.left.find(a)
                else:
                    return False
            else:
                if self.right:
-                   return self.right.find(d)
+                   return self.right.find(a)
                else:
                    return False
 
@@ -114,15 +114,15 @@
        def __init__(self):
            self.root=None
 
-       def insert(self,d):
+       def insert(self,a):
            if self.root:
-               return self.root.insert(d)
+               return self.root.insert(a)
            else:
-               self.root=node(d)
+               self.root=node(a)
                return True
-       def find(self,d):
+       def find(self,a):
            if self.root:
-               return self.root.find(d)
+               return self.root.find(a)
            else:
                return False
 
